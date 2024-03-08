@@ -19,12 +19,12 @@ pipeline{
 
     stage('Test'){
       steps{
-        sh './output'
+        sh 'this_command_does_not_exist'
       }
     }
 
     stage('Deploy'){
-      stes{
+      steps{
         echo 'Deployment step'
       }
     }
